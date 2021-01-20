@@ -24,3 +24,7 @@ Build Docker container: `docker build . -t robot_challenge`
 Run Docker container: `docker run -p 6555:8080 robot_challenge`
 
 Visit http://localhost:6555/direction to see running application
+
+## Testing Instructions
+
+`npm run test`
