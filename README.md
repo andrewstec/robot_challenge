@@ -23,4 +23,4 @@ Build Docker container: `docker build . -t robot_challenge`
 -- NOTE: 6555 or ANY free port in your local environment that will not conflict with other running applications.
 Run Docker container: `docker run -p 6555:8080 robot_challenge`
 
-Visit http://localhost:6555/direction to see running application.
+Visit http://localhost:6555/direction to see running application
