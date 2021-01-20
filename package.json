@@ -24,6 +24,8 @@
   },
   "homepage": "https://github.com/andrewstec/robot_challenge#readme",
   "dependencies": {
+    "@types/restify": "^8.4.2",
+    "restify": "^8.5.1",
     "typescript": "^4.1.3"
   }
 }
