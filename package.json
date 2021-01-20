@@ -1,0 +1,29 @@
+{
+  "name": "craftnote_challenge",
+  "version": "1.0.0",
+  "description": "Giving a stupid robot directions through RESTful API.",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrewstec/robot_challenge.git"
+  },
+  "keywords": [
+    "robot",
+    "challenge",
+    "directions",
+    "typescript"
+  ],
+  "author": "Andrew Stec",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/andrewstec/robot_challenge/issues"
+  },
+  "homepage": "https://github.com/andrewstec/robot_challenge#readme",
+  "dependencies": {
+    "typescript": "^4.1.3"
+  }
+}
