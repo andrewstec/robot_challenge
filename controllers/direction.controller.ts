@@ -1,7 +1,5 @@
 import * as restify from 'restify';
 
-const MAX_DEGREES = 360;
-
 const calcLeftTurn = (heading: number, target: number) => {
     let difference: number = heading - target;
     if (difference < 0) {
