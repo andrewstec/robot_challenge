@@ -37,4 +37,4 @@ const get = (req: restify.Request, res: restify.Response, next: restify.Next) =>
     next();
 };
 
-export { get };
+export {get};
