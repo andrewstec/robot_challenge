@@ -1,9 +1,10 @@
 import * as restify from 'restify';
-const app: restify.Server = restify.createServer({name: 'Robot Servo'});
+const respond: restify.RequestHandlerType = (req: restify.Request, res: restify.Response, next: restify.Next) => { res.send('hello ' + req.params.name); next(); };
 
-const respond = (req: restify.Request, res: restify.Response, next: restify.Next) => { res.send('hello ' + req.params.name); next(); };
-
-const server = restify.createServer();
+const server: restify.Server = restify.createServer({
+    handleUncaughtExceptions: true,
+    name: 'Robot Servo'
+});
 
 // Load plugins
 server.use(restify.plugins.queryParser());
