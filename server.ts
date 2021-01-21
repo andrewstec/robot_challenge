@@ -1,5 +1,5 @@
 import * as restify from 'restify';
-import * as controller from './direction.controller';
+import * as controller from './controllers/direction.controller';
 
 const respond: restify.RequestHandlerType = (req: restify.Request, res: restify.Response, next: restify.Next) => { res.send('hello ' + req.params.name); next(); };
 
