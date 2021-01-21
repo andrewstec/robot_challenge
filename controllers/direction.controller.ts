@@ -32,7 +32,7 @@ const get = (req: restify.Request, res: restify.Response, next: restify.Next) =>
     if (calcLeftTurn(heading, target) > calcRightTurn(heading, target)) {
         return res.json(200, {direction: 'right'});
     } else if (calcLeftTurn(heading, target) === calcRightTurn(heading, target)) {
-        return res.json(200, {directon: 'straight'});
+        return res.json(200, {direction: 'straight'});
     } else {
         res.json(200, {direction: 'left'});
     }
