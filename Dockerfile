@@ -11,4 +11,4 @@ RUN npm run build
 
 EXPOSE 8080
 
-CMD ["node", "/robot_challenge/bin/server.js"]
+CMD ["node", "/robot_challenge/bin/index.js"]
