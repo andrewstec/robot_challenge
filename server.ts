@@ -1,5 +1,5 @@
 import * as restify from 'restify';
-import * as controller from './controllers/direction.controller';
+import * as controller from './direction.controller';
 
 const server: restify.Server = restify.createServer({
     handleUncaughtExceptions: true,
