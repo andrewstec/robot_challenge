@@ -1,6 +1,6 @@
 # robot_challenge
 
-Helping a stupid robot move left or right is a challenge. Clone this repository to test your sanity. I am assuming that you are running Node JS and have `npm` installed.
+Helping a stupid robot move left or right is a challenge. Clone this repository to test your sanity. I am assuming that you are running Node JS 14+ and have `npm` or `yarn` already installed for the native installation approach.
 
 ## Developer Native Install Instructions
 
