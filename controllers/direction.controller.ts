@@ -31,9 +31,12 @@ const get = (req: restify.Request, res: restify.Response, next: restify.Next) =>
     // https://aviation.stackexchange.com/questions/47540/how-do-you-find-the-difference-in-degrees-between-two-headings
     if (calcLeftTurn(heading, target) > calcRightTurn(heading, target)) {
         return res.json(200, {direction: 'right'});
+    } else if (calcLeftTurn(heading, target) === calcRightTurn(heading, target)) {
+        return res.json(200, {directon: 'straight'});
+    } else {
+        res.json(200, {direction: 'left'});
     }
 
-    res.json(200, {direction: 'left'});
     next();
 };
 
