@@ -6,7 +6,7 @@
   "scripts": {
     "test": "jest",
     "build": "npx tsc",
-    "start": "node ./bin/server.js"
+    "start": "node ./bin/index.js"
   },
   "repository": {
     "type": "git",
