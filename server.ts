@@ -11,6 +11,14 @@ const server: restify.Server = restify.createServer({
 // Load plugins
 server.use(restify.plugins.queryParser({mapParams: true}));
 
-server.get('/direction', controller.get);
+server.get('/direction', (req: restify.Request, res: restify.Response, next: restify.Next) => { 
+    try {
+        return controller.get(req, res, next);
+    }
+    catch (err) {
+        res.json(500, {error: err.message});
+    };
+    next();
+ });
 
 export {server};
