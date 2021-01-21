@@ -24,6 +24,10 @@ const get = (req: restify.Request, res: restify.Response, next: restify.Next) =>
         throw new Error('Heading and target are required');
     }
 
+    if (isNaN(req.params.heading) || isNaN(req.params.target)) {
+        throw new Error('Heading and target must be valid numbers');
+    }
+
     // https://aviation.stackexchange.com/questions/47540/how-do-you-find-the-difference-in-degrees-between-two-headings
     if (calcLeftTurn(heading, target) > calcRightTurn(heading, target)) {
         return res.json(200, {direction: 'right'});
